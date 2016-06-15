@@ -33,6 +33,15 @@ filter.delegate = self; // id<SGFilterViewDelegate>
 }
 
 // 第tab里的第column列的数据，previousRow表示该列的前一列选中的row
+/*
+self.pData= @[@"北京", @"上海", @"河北"];
+self.cData = @[
+               @[@"海淀区", @"朝阳区", @"西城区", @"丰台区"],
+               @[@"浦东区", @"徐汇区", @"虹口区"],
+               @[@"石家庄市", @"邯郸市", @"保定市"]
+               ];
+
+*/
 - (NSArray *)filterView:(SGFilterView *)filterView dataForColumn:(NSInteger)column inTab:(NSInteger)tab previousSelectedRow:(NSInteger)previousRow
 {
     if (tab == 0) {
